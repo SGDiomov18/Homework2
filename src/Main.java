@@ -10,66 +10,134 @@ public class Main {
 
 
         System.out.println("\n--- Welcome to the Data Type calculator ---");
-        System.out.println("\n       Choose 1 of the 5 options:");
-        System.out.println("\n -1- Int");
-        System.out.println(" -2- Double");
-        System.out.println(" -3- Float");
-        System.out.println(" -4- Byte");
-        System.out.println(" -5- Boolean");
+        System.out.println("\n             Choose action: ");
+        System.out.println("\n-1- Multiplication");
+        System.out.println("-2- Division");
+
+        int ActionTypeNumber = scan.nextInt();
 
 
-        int OptionNumber = scan.nextInt();
 
-
-        if(OptionNumber == 1)
+        if(ActionTypeNumber == 1)
         {
-            System.out.println("\na = ");
-            Functions.getIntFirstNumber();
+            System.out.println("\n             Choose action: ");
+            System.out.println("\n -1- Int");
+            System.out.println(" -2- Double");
+            System.out.println(" -3- Float");
+            System.out.println(" -4- Byte");
+            System.out.println(" -5- Boolean");
 
-            System.out.println("b = ");
-            Functions.getIntSecondNumber();
-            Functions.Option1();
+            int DataTypeNumber = scan.nextInt();
+
+            if (DataTypeNumber == 1)
+            {
+                System.out.println("\na = ");
+                Functions.getIntFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getIntSecondNumber();
+                Functions.OptionMulti1();
+
+
+            }
+            else if(DataTypeNumber == 2)
+            {
+                System.out.println("\na = ");
+                Functions.getDoubleFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getDoubleSecondNumber();
+                Functions.OptionMulti2();
+            }
+            else if(DataTypeNumber == 3)
+            {
+                System.out.println("\na = ");
+                Functions.getFloatFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getFloatSecondNumber();
+                Functions.OptionMulti3();
+            }
+
+            else if(DataTypeNumber == 4)
+            {
+                System.out.println("\na = ");
+                Functions.getByteFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getByteSecondNumber();
+                Functions.OptionMulti4();
+            }
+
+            else if(DataTypeNumber == 5)
+            {
+                System.out.println("\na = ");
+                Functions.getByteFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getByteSecondNumber();
+                Functions.OptionMulti5();
+            }
 
 
         }
-        else if(OptionNumber == 2)
+
+        if(ActionTypeNumber == 2)
         {
-            System.out.println("\na = ");
-            Functions.getDoubleFirstNumber();
+            System.out.println("\n             Choose action: ");
+            System.out.println("\n -1- Int");
+            System.out.println(" -2- Double");
+            System.out.println(" -3- Float");
+            System.out.println(" -4- Byte");
 
-            System.out.println("b = ");
-            Functions.getDoubleSecondNumber();
-            Functions.Option2();
+
+            int DataTypeNumber = scan.nextInt();
+
+            if (DataTypeNumber == 1)
+            {
+                System.out.println("\na = ");
+                Functions.getIntFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getIntSecondNumber();
+                Functions.OptionDev1();
+
+
+            }
+            else if(DataTypeNumber == 2)
+            {
+                System.out.println("\na = ");
+                Functions.getDoubleFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getDoubleSecondNumber();
+                Functions.OptionDev2();
+            }
+            else if(DataTypeNumber == 3)
+            {
+                System.out.println("\na = ");
+                Functions.getFloatFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getFloatSecondNumber();
+                Functions.OptionDev3();
+            }
+
+            else if(DataTypeNumber == 4)
+            {
+                System.out.println("\na = ");
+                Functions.getByteFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getByteSecondNumber();
+                Functions.OptionDev4();
+            }
+
+
+
         }
-        else if(OptionNumber == 3)
-        {
-            System.out.println("\na = ");
-            Functions.getFloatFirstNumber();
 
-            System.out.println("b = ");
-            Functions.getFloatSecondNumber();
-            Functions.Option3();
-        }
 
-        else if(OptionNumber == 4)
-        {
-            System.out.println("\na = ");
-            Functions.getByteFirstNumber();
-
-            System.out.println("b = ");
-            Functions.getByteSecondNumber();
-            Functions.Option4();
-        }
-
-        else if(OptionNumber == 5)
-        {
-            System.out.println("\na = ");
-            Functions.getByteFirstNumber();
-
-            System.out.println("b = ");
-            Functions.getByteSecondNumber();
-            Functions.Option4();
-        }
 
     }
 }

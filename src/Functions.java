@@ -84,26 +84,48 @@ public class Functions {
         return BooleanSecondNumber;
     }
 
-    public static void Option1(){
+    public static void OptionDev1(){
 
-        System.out.println("Result: " + (IntFirstNumber + IntSecondNumber));
+        System.out.println("Result: " + (IntFirstNumber / IntSecondNumber));
 }
-    public static void Option2(){
+    public static void OptionDev2(){
 
-        System.out.println("Result: " + (DoubleFirstNumber + DoubleSecondNumber));
+        System.out.println("Result: " + (DoubleFirstNumber / DoubleSecondNumber));
     }
 
-    public static void Option3(){
+    public static void OptionDev3(){
 
-        System.out.println("Result: " + (FloatFirstNumber + FloatSecondNumber));
+        System.out.println("Result: " + (FloatFirstNumber / FloatSecondNumber));
     }
 
-    public static void Option4(){
+    public static void OptionDev4(){
 
-        System.out.println("Result: " + (ByteFirstNumber + ByteSecondNumber));
+        System.out.println("Result: " + (ByteFirstNumber / ByteSecondNumber));
     }
 
-    public static void Option5(){
+
+
+
+    public static void OptionMulti1(){
+
+        System.out.println("Result: " + (IntFirstNumber * IntSecondNumber));
+    }
+    public static void OptionMulti2(){
+
+        System.out.println("Result: " + (DoubleFirstNumber * DoubleSecondNumber));
+    }
+
+    public static void OptionMulti3(){
+
+        System.out.println("Result: " + (FloatFirstNumber * FloatSecondNumber));
+    }
+
+    public static void OptionMulti4(){
+
+        System.out.println("Result: " + (ByteFirstNumber * ByteSecondNumber));
+    }
+
+    public static void OptionMulti5(){
 
         System.out.println("Result: " + (BooleanFirstNumber | BooleanSecondNumber));
     }
