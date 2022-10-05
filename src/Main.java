@@ -26,6 +26,8 @@ public class Main {
             System.out.println(" -3- Float");
             System.out.println(" -4- Byte");
             System.out.println(" -5- Boolean");
+            System.out.println(" -6- Short");
+            System.out.println(" -7- Long");
 
             int DataTypeNumber = scan.nextInt();
 
@@ -36,6 +38,7 @@ public class Main {
 
                 System.out.println("b = ");
                 Functions.getIntSecondNumber();
+
                 Functions.OptionMulti1();
 
 
@@ -47,6 +50,7 @@ public class Main {
 
                 System.out.println("b = ");
                 Functions.getDoubleSecondNumber();
+
                 Functions.OptionMulti2();
             }
             else if(DataTypeNumber == 3)
@@ -56,6 +60,7 @@ public class Main {
 
                 System.out.println("b = ");
                 Functions.getFloatSecondNumber();
+
                 Functions.OptionMulti3();
             }
 
@@ -66,6 +71,7 @@ public class Main {
 
                 System.out.println("b = ");
                 Functions.getByteSecondNumber();
+
                 Functions.OptionMulti4();
             }
 
@@ -76,7 +82,31 @@ public class Main {
 
                 System.out.println("b = ");
                 Functions.getByteSecondNumber();
+
                 Functions.OptionMulti5();
+            }
+
+            else if(DataTypeNumber == 6)
+            {
+                System.out.println("\na = ");
+                Functions.getShortFirstNumber();
+
+                System.out.println("\na = ");
+                Functions.getShortSecondNumber();
+
+                Functions.OptionMulti6();
+            }
+
+            else if(DataTypeNumber == 7)
+            {
+                System.out.println("\na = ");
+                Functions.getLongFirstNumber();
+
+                System.out.println("\na = ");
+                Functions.getLongSecondNumber();
+
+                Functions.OptionMulti7();
+
             }
 
 
@@ -89,6 +119,8 @@ public class Main {
             System.out.println(" -2- Double");
             System.out.println(" -3- Float");
             System.out.println(" -4- Byte");
+            System.out.println(" -5- Short");
+            System.out.println(" -6- Long");
 
 
             int DataTypeNumber = scan.nextInt();
@@ -131,6 +163,28 @@ public class Main {
                 System.out.println("b = ");
                 Functions.getByteSecondNumber();
                 Functions.OptionDev4();
+            }
+
+
+            else if(DataTypeNumber == 5)
+            {
+                System.out.println("\na = ");
+                Functions.getLongFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getLongSecondNumber();
+                Functions.OptionDev5();
+            }
+
+
+            else if(DataTypeNumber == 6)
+            {
+                System.out.println("\na = ");
+                Functions.getLongFirstNumber();
+
+                System.out.println("b = ");
+                Functions.getLongSecondNumber();
+                Functions.OptionDev6();
             }
 
 

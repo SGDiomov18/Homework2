@@ -22,7 +22,17 @@ public class Functions {
   private static boolean BooleanSecondNumber;
 
 
-  static Scanner scan = new Scanner(System.in);
+  private static short ShortFirstNumber;
+  private static short ShortSecondNumber;
+
+
+
+  private static long LongFirstNumber;
+  private static long LongSecondNumber;
+
+
+
+    static Scanner scan = new Scanner(System.in);
 
     public static int getIntFirstNumber() {
 
@@ -84,6 +94,29 @@ public class Functions {
         return BooleanSecondNumber;
     }
 
+
+    public static short getShortFirstNumber() {
+        ShortFirstNumber= scan.nextShort();
+        return ShortFirstNumber;
+    }
+
+    public static short getShortSecondNumber() {
+        ShortSecondNumber = scan.nextShort();
+        return ShortSecondNumber;
+    }
+
+
+    public static long getLongFirstNumber(){
+        LongFirstNumber = scan.nextLong();
+        return LongFirstNumber;
+    }
+
+    public static long getLongSecondNumber(){
+        LongSecondNumber = scan.nextLong();
+        return LongSecondNumber;
+    }
+
+
     public static void OptionDev1(){
 
         System.out.println("Result: " + (IntFirstNumber / IntSecondNumber));
@@ -101,6 +134,16 @@ public class Functions {
     public static void OptionDev4(){
 
         System.out.println("Result: " + (ByteFirstNumber / ByteSecondNumber));
+    }
+
+    public static void OptionDev5(){
+
+        System.out.println("Result: " + (ShortFirstNumber / ShortSecondNumber));
+    }
+    public static void OptionDev6(){
+
+        System.out.println("Result: " + (LongFirstNumber / LongSecondNumber));
+
     }
 
 
@@ -129,6 +172,20 @@ public class Functions {
 
         System.out.println("Result: " + (BooleanFirstNumber | BooleanSecondNumber));
     }
+
+    public static void OptionMulti6(){
+
+        System.out.println("Result: " + (ShortFirstNumber * ShortSecondNumber));
+    }
+    public static void OptionMulti7(){
+
+        System.out.println("Result: " + (LongFirstNumber * LongSecondNumber));
+
+    }
+
+
+
+
 
 
 
